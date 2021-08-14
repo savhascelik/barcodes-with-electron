@@ -1,0 +1,26 @@
+{
+  "name": "barcodeprint",
+  "version": "1.0.0",
+  "description": "Barcode Print For Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . barcodeprint --overwrite  --platform=win32 --arch=x64 --icon=./assets/img/print.ico --prune=true --out=../barcodeprint"
+  },
+  "keywords": [
+    "barcode",
+    "electron"
+  ],
+  "author": "Savaş HASÇELİK",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.1.5",
+    "electron-packager": "^14.1.1",
+    "electron-rebuild": "^1.8.8"
+  },
+  "dependencies": {
+    "app": "^0.1.0",
+    "iconv": "^3.0.0",
+    "jquery": "^3.4.1"
+  }
+}

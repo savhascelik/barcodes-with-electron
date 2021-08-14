@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="content-security-policy"
+    content="default-src 'none'; script-src 'self';
+    connect-src 'self'; img-src 'self';
+    style-src 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=';" />
+    <title>Barcode Print</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"  crossorigin="anonymous">
+
+
+  </head>
+  
+  <body >
+    
+<div class="container row">
+
+  <div class="col-md-4">
+
+    <img id="copy" src="./assets/img/paste1.png" height="160px" alt="">
+    <!-- /varsayılan yazıcının adının geldiği alan -->
+
+    <input id="printers" type="text" class="form-control" value="" disabled>
+  </div>
+
+  <div class="col-md-8">
+
+    <div class="input-group mb-2">
+      <!-- /şirket isminin alanı -->
+
+      <input id="sirket" type="text" class="form-control" placeholder="Şirket Adı">
+    </div>
+    <div class="input-group  mb-2">
+      <!-- /ürün adının geldiği alan -->
+
+      <input id="urunadi" type="text" class="form-control" placeholder="Ürün Adı">
+    </div>
+    
+
+    <div class="input-group  mb-2">
+      <!-- /ürün barkodunun geldiği alan -->
+      <input id="barcode" type="text" class="form-control" placeholder="Barcode">
+    </div>
+
+    <div class="input-group  mb-2">
+      
+
+      <button id="print" class="btn btn-success btn-block" disabled >Print
+
+        <span class="badge badge-light">
+          <!-- /yazıcıya gönderilecek barkod adedi -->
+        <a href="#" id="count" >1</a>
+
+        </span>
+
+      </button>
+
+    </div>
+    <!-- /kopyalanan verinin bilgilendirme alanı -->
+    <div class="col-md-8 ">
+      <p >CTRL + V   ||  Yenile: CTRL + R</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+  
+
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script> 
+   
+    <script type="text/javascript" src="./assets/js/renderer.js"></script> 
+   
+  </body>
+</html>
